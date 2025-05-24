@@ -72,4 +72,14 @@ class Product(mixins.ProductMixin, models.Model):
     class Meta:
         indexes = [
             GinIndex(fields=["search_vector"]),
+            GinIndex(
+                fields=["name"],
+                opclasses=["gin_trgm_ops"],
+                name="product_name_trgm_idx",
+            ),
+            GinIndex(
+                fields=["name_ar"],
+                opclasses=["gin_trgm_ops"],
+                name="product_name_ar_trgm_idx",
+            ),
         ]
