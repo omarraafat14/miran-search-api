@@ -204,8 +204,8 @@ IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 """ SPECTACULAR_SETTINGS """
 SPECTACULAR_SETTINGS = {
-    "TITLE": "elevate_rebuild API",
-    "DESCRIPTION": "elevate_rebuild Swagger Documentation",
+    "TITLE": "Miran API",
+    "DESCRIPTION": "Miran Swagger Documentation",
     "VERSION": "v1",
     "SCHEMA_PATH_PREFIX": "/en/api/",
     "SCHEMA_PATH_PREFIX_TRIM": False,
